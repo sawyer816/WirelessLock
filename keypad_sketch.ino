@@ -32,7 +32,8 @@ void setup()
 
 void loop() {
   char key = kpd.getKey();
-  if(key) {
+  if (key) {
+    lcd.clear();
     switch (key) {
       case '*':
         break;
@@ -45,7 +46,5 @@ void loop() {
     lcd.setCursor(0, 0);
     lcd.print("Button: ");
     lcd.print(key);
-    delay(2000);
-    lcd.clear();
   }
 }
